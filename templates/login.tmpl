@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+</head>
+<body>
+
+<br>
+<div class="row">
+    <div class="container">
+        <div class="login-register-form-section">
+            <h2>Login</h2>
+            <form class="form-horizontal" method="post" action="">
+                <div class="form-group " >
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required="required" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a href="/password_forget" class="pull-right">Forgot password?</a>
+                </div>
+                <input type="submit" value="Login" class="btn btn-success btn-custom">
+
+            </form>
+            <a href="/googleLogin" class="btn btn-success btn-custom" role="button">Login with Google</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
